@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {outline-color:rgb(12, 0, 0);}
+        p.outset {outline-style: outset;}
+        body {
+          background-color: #f0ec09;
+             }
+             input[type=submit] {
+  width: 50%;
+  background-color:   #f0ec09;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #50b6f1;
+  padding: 20px;
+}
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <title>SPECIES PREDICTOR !!</title>
+</head>
+<body>
+
+    <h1 style="font-family:verdana;">Customer Churning !!</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+<div>
+    <p class="outset">
+    <h1><marquee> Yes,Customer has Churned as Customer oftenely uses Services</marquee></h1>
+    </div>
+
+</body>
+</html>

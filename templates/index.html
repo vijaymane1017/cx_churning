@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {outline-color:rgb(12, 0, 0);}
+        p.outset {outline-style: outset;}
+        body {
+          background-color: #ee7411;
+             }
+             input[type=submit] {
+  width: 50%;
+  background-color:   #ee7411;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #4cc6cd;
+  padding: 20px;
+}
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <title>Customer Churning Project !!</title>
+</head>
+<body>
+
+    <h1 style="font-family:verdana;"><marquee>Customer Churning Project !!</marquee></h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+<div>
+     <h2>This App is based On Customer Churning for anylysing customers sentiments for this you just have to provide few details like  customer credentials of  services</h2>
+
+    <p class="outset">
+    <form method="POST" action="/predict">
+        <label>Enter account-Length</label><br>
+        <input type="text" name="ac_l" placeholder="should be in Between 1-217"><br><br>
+
+        <label>Enter International-plan</label><br>
+        <input type="text" name="int_p" placeholder="if yes then 1 else 0"><br><br>
+
+        <label>Enter voicemail-plan</label><br>
+        <input type="text" name="vc_p" placeholder="if yes then 1 else 0"><br><br>
+
+        <label>Enter number v/s mail messeges</label><br>
+        <input type="text" name="nm_msg" placeholder="should be in Between 0-48"><br><br>
+
+        <label>Enter number total day minutes</label><br>
+        <input type="text" name="tdm" placeholder="should be in Between 19-339"><br><br>
+
+        <label>Enter number total day calls</label><br>
+        <input type="text" name="tdc" placeholder="should be in Between 42-158"><br><br>
+
+        <label>Enter number total day charge</label><br>
+        <input type="text" name="tdchg" placeholder="should be in Between 0-60"><br><br>
+
+        <label>Enter number total evening minutes</label><br>
+        <input type="text" name="tem" placeholder="should be in Between 50-353"><br><br>
+
+        <label>Enter number total eve calls</label><br>
+        <input type="text" name="tec" placeholder="should be in Between 42-159"><br><br>
+
+        <label>Enter number total eve charge</label><br>
+        <input type="text" name="techg" placeholder="should be in Between 5-30"><br><br>
+
+        <label>Enter number total night minutes</label><br>
+        <input type="text" name="tnm" placeholder="should be in Between 51-351"><br><br>
+
+        <label>Enter number total night calls</label><br>
+        <input type="text" name="tnc" placeholder="should be in Between 41-159"><br><br>
+
+        <label>Enter number total night charge</label><br>
+        <input type="text" name="tnchg" placeholder="should be in Between 3-16"><br><br>
+
+        <label>Enter number Total Minutes</label><br>
+        <input type="text" name="tm" placeholder="should be in Between 2-19"><br><br>
+
+        <label>Enter number Total  Calls</label><br>
+        <input type="text" name="tc" placeholder="should be in Between 0-11"><br><br>
+
+        <label>Enter number total Charge</label><br>
+        <input type="text" name="tchg" placeholder="should be in Between 0-5"><br><br>
+
+        <label>Enter  Total number of calls to customer service</label><br>
+        <input type="text" name="tcs" placeholder="should be in Between 0-5"><br><br>
+
+
+
+        <input type="submit" value="Predict"><br><br>
+    </form></p>
+    </div>
+
+</body>
+</html>
